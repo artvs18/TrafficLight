@@ -16,16 +16,21 @@ class ViewController: UIViewController {
     @IBOutlet var buttonToChangeLight: UIButton!
     
     private var numberOfTaps = 0
+    private let lightON = 1.0
+    private let lightOFF = 0.3
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        redLight.alpha = 0.3
-        yellowLight.alpha = 0.3
-        greenLight.alpha = 0.3
+        redLight.alpha = lightOFF
+        yellowLight.alpha = lightOFF
+        greenLight.alpha = lightOFF
+        buttonToChangeLight.layer.cornerRadius = 15
+    }
+    
+    override func viewDidLayoutSubviews() {
         redLight.layer.cornerRadius = redLight.bounds.width / 2
         yellowLight.layer.cornerRadius = yellowLight.bounds.width / 2
         greenLight.layer.cornerRadius = greenLight.bounds.width / 2
-        buttonToChangeLight.layer.cornerRadius = 15
     }
     
     @IBAction func buttonDidTapped() {
@@ -34,17 +39,17 @@ class ViewController: UIViewController {
         
         switch numberOfTaps {
         case 1:
-            redLight.alpha = 1
-            yellowLight.alpha = 0.3
-            greenLight.alpha = 0.3
+            redLight.alpha = lightON
+            yellowLight.alpha = lightOFF
+            greenLight.alpha = lightOFF
         case 2:
-            redLight.alpha = 0.3
-            yellowLight.alpha = 1
-            greenLight.alpha = 0.3
+            redLight.alpha = lightOFF
+            yellowLight.alpha = lightON
+            greenLight.alpha = lightOFF
         default:
-            redLight.alpha = 0.3
-            yellowLight.alpha = 0.3
-            greenLight.alpha = 1
+            redLight.alpha = lightOFF
+            yellowLight.alpha = lightOFF
+            greenLight.alpha = lightON
             numberOfTaps = 0
         }
     }

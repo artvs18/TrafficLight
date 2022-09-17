@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_0" orientation="portrait" appearance="dark"/>
+    <device id="retina6_12" orientation="portrait" appearance="dark"/>
     <accessibilityOverrides dynamicTypePreference="3"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -15,31 +15,31 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TrafficLight" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="150" translatesAutoresizingMaskIntoConstraints="NO" id="Yoj-xW-Wx6">
-                                <rect key="frame" x="88.333333333333329" y="97" width="213.33333333333337" height="683"/>
+                                <rect key="frame" x="91" y="109" width="211" height="679"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="1f3-Gy-nQd">
-                                        <rect key="frame" x="41" y="0.0" width="133" height="479"/>
+                                        <rect key="frame" x="39.333333333333343" y="0.0" width="132.33333333333334" height="476.33333333333331"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EJN-dD-lPj">
-                                                <rect key="frame" x="0.0" y="0.0" width="133.33333333333334" height="133.33333333333334"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="132.33333333333334" height="132"/>
                                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="EJN-dD-lPj" secondAttribute="height" multiplier="1:1" id="9ew-qz-UQn"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OA2-QI-5ZJ">
-                                                <rect key="frame" x="0.0" y="173.33333333333331" width="133.33333333333334" height="133"/>
+                                                <rect key="frame" x="0.0" y="172" width="132.33333333333334" height="132"/>
                                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="OA2-QI-5ZJ" secondAttribute="height" multiplier="1:1" id="Pxv-Jt-Zgj"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tnd-P7-7PD">
-                                                <rect key="frame" x="0.0" y="346.33333333333331" width="133.33333333333334" height="133.33333333333331"/>
+                                                <rect key="frame" x="0.0" y="344" width="132.33333333333334" height="132.33333333333337"/>
                                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Tnd-P7-7PD" secondAttribute="height" multiplier="1:1" id="Juk-gy-u8w"/>
@@ -48,12 +48,12 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="euV-VT-DWv">
-                                        <rect key="frame" x="0.0" y="629.66666666666663" width="213.33333333333334" height="53.333333333333371"/>
+                                        <rect key="frame" x="0.0" y="626.33333333333337" width="211" height="52.666666666666629"/>
                                         <color key="backgroundColor" systemColor="linkColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="euV-VT-DWv" secondAttribute="height" multiplier="4:1" id="fsA-6K-A0O"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="40"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="39"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="START">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
